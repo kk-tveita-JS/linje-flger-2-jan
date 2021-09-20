@@ -7,7 +7,7 @@ basic.forever(function () {
     } else if (bitbot.readLine(BBLineSensor.Left) == 0 && bitbot.readLine(BBLineSensor.Right) == 1) {
         bitbot.move(BBMotor.Left, BBDirection.Forward, Fart)
         bitbot.move(BBMotor.Right, BBDirection.Forward, 0)
-    } else if (false) {
+    } else if (bitbot.readLine(BBLineSensor.Left) == 1 && bitbot.readLine(BBLineSensor.Right) == 0) {
         bitbot.move(BBMotor.Left, BBDirection.Forward, 0)
         bitbot.move(BBMotor.Right, BBDirection.Forward, Fart)
     } else {
